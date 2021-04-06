@@ -10,6 +10,11 @@ class Product {
     this.description = desc;
     this.price = price;
   }
+
+  print(){
+    console.log(this.title);
+    // console.log(constructor);
+  }
 }
 
 const productList = {
@@ -28,6 +33,11 @@ const productList = {
     )
   ],
   render() {
+    console.log(this.products)
+    console.log(this.products[0])
+    console.log(this.products[0].print('Nirvana'))
+    console.log(this.products[0].print())
+    
     const renderHook = document.getElementById('app');
     const prodList = document.createElement('ul');
     prodList.className = 'product-list';
